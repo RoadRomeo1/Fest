@@ -138,7 +138,7 @@ body {
 <body style="background-color:black;">
 
 <div class="topnav" id="myTopnav">
-  <a href="Welcome.html" class="active">Home</a>
+  <a href="Welcome" class="active">Home</a>
   <a href="manage">Manage</a>
   <a href="https://www.google.com/search?q=lnct+indore&source=lnms&tbm=nws&sa=X&ved=0ahUKEwjasrCftazgAhXCs48KHYXkB5gQ_AUIECgD&biw=1366&bih=657" target="new">News</a>
   <a href="http://www.lnctgroup.in/contact-us/" target="new">Contact</a>

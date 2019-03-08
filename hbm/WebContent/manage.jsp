@@ -150,7 +150,7 @@ font-style: italic;
 <body style="background-color:black;">
 
 <div class="topnav" id="myTopnav">
-  <a href="Welcome.html" >Home</a>
+  <a href="Welcome" >Home</a>
   <a href="#" class="active">Manage</a>
   <a href="https://www.google.com/search?q=lnct+indore&source=lnms&tbm=nws&sa=X&ved=0ahUKEwjasrCftazgAhXCs48KHYXkB5gQ_AUIECgD&biw=1366&bih=657" target="new">News</a>
   <a href="http://www.lnctgroup.in/contact-us/" target="new">Contact</a>
@@ -172,7 +172,7 @@ font-style: italic;
 
 <button class="collapsible">Add New Entry</button>
 <div class="content">
-<a href="Welcome.html" class="link"><h4>-> Click here to add new entry <-</h4></a>
+<a href="Welcome" class="link"><h4>-> Click here to add new entry <-</h4></a>
  </div>
 
 <br>
