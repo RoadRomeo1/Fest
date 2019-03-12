@@ -36,7 +36,7 @@ public class Save extends HttpServlet {
          	    		System.out.println("Registered");
          				pw.println("<script type=\"text/javascript\">");
          				pw.println("alert('Data Successfully Registered.');");
-         				pw.println("location='single.jsp';");
+         				pw.println("location='Welcome';");
          				pw.println("</script>");
          	    		}
          	     	}catch (Exception e) {
@@ -55,7 +55,7 @@ public class Save extends HttpServlet {
     		System.out.println("Registered");
 			pw.println("<script type=\"text/javascript\">");
 			pw.println("alert('Data Successfully Registered.');");
-			pw.println("location='single.jsp';");
+			pw.println("location='Welcome';");
 			pw.println("</script>");
 
     		}

@@ -1,21 +1,14 @@
 package com.hbm.dao;
 
 import org.hibernate.Session;
-import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
-import org.hibernate.boot.Metadata;
-import org.hibernate.boot.MetadataSources;
-import org.hibernate.boot.registry.StandardServiceRegistry;
-import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
+
+import com.hbm.connect.DataConnector;
 import com.hbm.data.HbmData;
 
 public class HbmDao {
 	
-	static StandardServiceRegistry ssr=new StandardServiceRegistryBuilder().configure("hibernate.cfg.xml").build();
-	static Metadata meta=new MetadataSources(ssr).getMetadataBuilder().build();
-	
-	static SessionFactory factory=meta.getSessionFactoryBuilder().build();
-	static Session session=factory.openSession();
+	static Session session=DataConnector.getConnect();
 	static Transaction t=session.beginTransaction();
 	
 

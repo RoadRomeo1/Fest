@@ -42,7 +42,7 @@ public class couple extends HttpServlet {
     			  System.out.println("Registered");
    				pw.println("<script type=\"text/javascript\">");
    				pw.println("alert('Data Successfully Registered.');");
-   				pw.println("location='double.jsp';");
+   				pw.println("location='Welcome';");
    				pw.println("</script>");
 
     		  }
@@ -63,7 +63,7 @@ public class couple extends HttpServlet {
     			  System.out.println("Registered");
    				pw.println("<script type=\"text/javascript\">");
    				pw.println("alert('Data Successfully Registered.');");
-   				pw.println("location='double.jsp';");
+   				pw.println("location='Welcome';");
    				pw.println("</script>");
 
     		  }
