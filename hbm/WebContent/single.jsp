@@ -12,6 +12,16 @@ body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.link{
+color: black;
+font-style: italic;
+}
+
+.link:hover {
+	color: red;
+}
+
 .collapsible {
   background-color: #777;
   color: white;
@@ -265,9 +275,7 @@ body {
 
 <button class="collapsible">Show Entries</button>
 <div class="content">
-<form action="dis" method="get">
-<input type="submit" value="Show" title="Show the Data." class="btn">
-</form>
+<a href="com.hbm.control.dis" class="link">Show the data</a>
    </div>
 <br>
 <br>

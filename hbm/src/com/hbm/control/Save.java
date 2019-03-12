@@ -31,15 +31,15 @@ public class Save extends HttpServlet {
          		 data.setDate(date+"-"+month+"-"+year);
          		 	int i=HbmDao.register(data);
          	    	try {
+         	   
          	    		if(i>0) {
          	    		System.out.println("Registered");
          				pw.println("<script type=\"text/javascript\">");
          				pw.println("alert('Data Successfully Registered.');");
          				pw.println("location='single.jsp';");
          				pw.println("</script>");
-
          	    		}
-         	    	}catch (Exception e) {
+         	     	}catch (Exception e) {
          			pw.println("Error: "+e.getMessage());
          	    	}
 	    }
@@ -63,6 +63,6 @@ public class Save extends HttpServlet {
 		pw.println("Error: "+e.getMessage());
     	}
     	}
-	}
+    	}
 
 }

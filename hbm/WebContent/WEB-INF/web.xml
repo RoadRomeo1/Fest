@@ -37,11 +37,19 @@
     <url-pattern>/manage</url-pattern>
   </servlet-mapping>
   <servlet>
-  <servlet-name>Welcome</servlet-name>
-  <jsp-file>/Welcome.jsp</jsp-file>
+    <servlet-name>Welcome</servlet-name>
+    <jsp-file>/Welcome.jsp</jsp-file>
   </servlet>
   <servlet-mapping>
-  <servlet-name>Welcome</servlet-name>
-  <url-pattern>/</url-pattern>
+    <servlet-name>Welcome</servlet-name>
+    <url-pattern>/Welcome</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  <servlet-name>display</servlet-name>
+  <jsp-file>/display.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>display</servlet-name>
+  <url-pattern>/display</url-pattern>
   </servlet-mapping>
 </web-app>

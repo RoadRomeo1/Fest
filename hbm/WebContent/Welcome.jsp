@@ -3,34 +3,16 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<title>Fest</title>
- <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="css/menubar.css">
-<link rel="stylesheet" href="css/collapsible.css">
-<style>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 
+<title>Fest</title>
+<link  rel="icon" href="img/single.png" type="image/x-icon"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-}
-
-.footer{
-
-position: fixed;
-left: 0;
-bottom: 0;
-width: 100%;
-background-color:  #4CAF50;
-color: white;
-text-align: center;
-}
-
-table {
-	width: 50%;
-	border-collapse: separate;
-	table-layout: fixed;
-	
 }
 
 .link{
@@ -42,23 +24,111 @@ font-style: italic;
 	color: red;
 }
 
- .txt{
- width:200px;
- height:10px;
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #4CAF50;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #333;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+
+.sel{
+ width:415px;
+ height:62px;
+ font-size: 1.25em;
+ font-weight: 350;
  margin-top:18px;
  margin-left:20px;
  padding:10px 8px;
  border-radius:15px;
  border-color:transparent;
  }
+ 
+ .txt{
+ width:200px;
+ height:18px;
+ padding:10px 8px;
+ border-radius:15px;
+ border-color:transparent;
+ }
+
+
 
  .btn{
  background-color:#333;
  border-radius:5px;
  border-color:white;
  background-color:#333;
- height:30px;
- width:90px;
+ height:35px;
+ width:100px;
  font-style:color="white";
  }
  
@@ -66,8 +136,15 @@ font-style: italic;
  background-color:#4CAF50;
  }
 
-
+table {
+	width: 50%;
+	border-collapse: separate;
+	table-layout: fixed;
+	
+}
+ 
 </style>
+
 </head>
 
 <body bgcolor="black">
@@ -75,9 +152,9 @@ font-style: italic;
 <div class="topnav" id="myTopnav">
   <a href="#home" class="active">Home</a>
   <a href="manage">Manage</a>
-  <a href="https://www.google.com/search?q=lnct+indore&source=lnms&tbm=nws&sa=X&ved=0ahUKEwjasrCftazgAhXCs48KHYXkB5gQ_AUIECgD&biw=1366&bih=657" target="new">News</a>
-  <a href="http://www.lnctgroup.in/contact-us/" target="new">Contact</a>
-  <a href="http://www.lnctgroup.in/about-us/" target="new">About</a>
+  <a href=#>News</a>
+  <a href=#>Contact</a>
+  <a href=#>About</a>
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
   <i class="fa fa-bars"></i>
   </a>
@@ -93,7 +170,6 @@ font-style: italic;
 
 <!-- Games  -->
 <button class="collapsible">Games</button>
-
 <!-- outdoor games -->
 <div class="content">
 <button class="collapsible">Outdoor Games</button>
@@ -318,15 +394,38 @@ font-style: italic;
 
 
 <div style="position:fixed; bottom:0;right:0; color:white;background-color:#333;">
-<center><caption>Wanna Subscribe for latest updates</caption></center><br>
-<form method="get" action="com.hbm.mail.SaveEmail">
-<input type="email" class="txt" name="email" placeholder="Enter your email here" required="required">&nbsp<input type="submit" class="btn" value="Subscribe">
+<center><caption>Wanna Subscribe for latest updates</caption></center>
+<br><form method="get" action="com.hbm.mail.SaveEmail">
+<input type="email" class="txt" name="email" placeholder="Enter your email here" required="required"><input type="submit" class="btn" value="Subscribe">
 </form>
 </div>	
 
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
 
-<script type="text/javascript" src="js/collapsible.js"></script>
-<script type="text/javascript" src="js/menubar.js"></script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+
+</script>
 
 </body>
 </html>

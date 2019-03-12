@@ -25,13 +25,21 @@ public class SaveEmail extends HttpServlet {
 	         int i=EmailDao.register(data);
 	         try {
 	         if(i>0) {
+	        	 if(i==1) {
 	        	System.out.println("New Subscriber");
 	        	System.out.println(email);
    				pw.println("<script type=\"text/javascript\">");	
    				pw.println("alert('Congratulation!!! you are now Subscriber.');");
-   				pw.println("location='Welcome.html';");
+   				pw.println("location='Welcome';");
    				pw.println("</script>");
-   				
+	        	 }
+	        	 else if(i==2) {
+	        		    pw.println("<script type=\"text/javascript\">");	
+	    				pw.println("alert('You are already a subscriber.');");
+	    				pw.println("location='Welcome';");
+	    				pw.println("</script>");
+	 	        		 
+	        	 }
 	         }
 	         }catch (Exception e) {
                 pw.println("Error: "+e.getMessage());
