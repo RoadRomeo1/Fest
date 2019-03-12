@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 
-<title>Fest</title>
+<title>Data Dashboard</title>
 <link  rel="icon" href="img/single.png" type="image/x-icon"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -14,6 +14,34 @@ body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
+
+table {
+	border: 1px solid black;
+	outline-color: black;
+	table-layout: fixed;
+	width: 100%;
+	border-collapse: collapse;
+    border-color: white;	
+}
+
+table th{
+	color: white;
+    border: 1px solid white;
+	
+}
+
+table td {
+	width: 50%;
+	border: 1px solid white;
+	padding: 10px;
+	text-align: center;
+	color: white;
+}
+
+table caption {
+	font-style: italic;
+}
+
 
 .link{
 color: black;
@@ -149,9 +177,10 @@ font-style: italic;
 </head>
 <body style="background-color:black;">
 
+
 <div class="topnav" id="myTopnav">
   <a href="Welcome" >Home</a>
-  <a href="#" class="active">Manage</a>
+  <a href="manage" class="active">Manage</a>
   <a href="#" target="new">News</a>
   <a href="#" target="new">Contact</a>
   <a href="#" target="new">About</a>
@@ -163,40 +192,61 @@ font-style: italic;
 <div style="padding-left:16px; color:white; text-align:center;">
 <h1>Fest</h1>
 </div>
-
-
-<br>
-<br>
 <br>
 <br>
 
-<button class="collapsible">Add New Entry</button>
-<div class="content">
-<a href="Welcome" class="link"><h4>-> Click here to add new entry <-</h4></a>
- </div>
+<center>
+<table>
+<tr>
+<th>Partner-1</th>
+<th>Partner-2</th>
+<th>Partner-3</th>
+<th>Partner-4</th>
+<th>Partner-5</th>
+<th>Partner-6</th>
+<th>Partner-7</th>
+<th>Partner-8</th>
+<th>Partner-9</th>
+<th>Partner-10</th>
+<th>Partner-11</th>
+<th>Partner-12</th>
+<th>Partner-13</th>
+<th>Partner-14</th>
+<th>Partner-15</th>
+<th>Event Name</th>
+<th>Date of Event</th>
+</tr>
+</table>
+</center>
 
-<br>
-<br>
-<br>
-<br>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core"  prefix="c"%>
+<center>
+<table>
+<c:forEach items="${requestScope.record}" var="a">
+<tr>
+<td><c:out value="${a.partner1}"/></td>
+<td><c:out value="${a.partner2}"/></td>
+<td><c:out value="${a.partner3}"/></td>
+<td><c:out value="${a.partner4}"/></td>
+<td><c:out value="${a.partner5}"/></td>
+<td><c:out value="${a.partner6}"/></td>
+<td><c:out value="${a.partner7}"/></td>
+<td><c:out value="${a.partner8}"/></td>
+<td><c:out value="${a.partner9}"/></td>
+<td><c:out value="${a.partner10}"/></td>
+<td><c:out value="${a.partner11}"/></td>
+<td><c:out value="${a.partner12}"/></td>
+<td><c:out value="${a.partner13}"/></td>
+<td><c:out value="${a.partner14}"/></td>
+<td><c:out value="${a.partner15}"/></td>
+<td><c:out value="${a.eventname}"/></td>
+<td><c:out value="${a.date}"/></td>
+</tr>
+</c:forEach>
+</table>
+</center>
 
-<button class="collapsible">Delete Entry</button>
-<div class="content">
-   </div>
-<br>
-<br>
-<br>
-<br>
 
-
-<button class="collapsible">Show Entries</button>
-<div class="content">
-<br>	
-<a href="com.hbm.display.dis" class="link"  title="Click for data.">Single Player</a><br><br>
-<a href="com.hbm.display.disPartner" class="link"  title="Click for data.">Pair</a><br><br>
-<a href="com.hbm.display.disTeam" class="link"  title="Click for data.">Group</a>
-
-   </div>
 
 
 <script>

@@ -8,6 +8,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
+.link{
+color: black;
+font-style: italic;
+}
+
+.link:hover {
+	color: red;
+}
+
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -296,7 +305,8 @@ body {
 
 <button class="collapsible">Show Entries</button>
 <div class="content">
-   </div>
+<a href="com.hbm.display.disTeam" class="link" title="Show the data.">Show the data</a>
+    </div>
 <br>
 <br>
 <br>
