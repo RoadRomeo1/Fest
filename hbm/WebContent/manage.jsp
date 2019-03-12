@@ -192,9 +192,9 @@ font-style: italic;
 <button class="collapsible">Show Entries</button>
 <div class="content">
 <br>	
-<a href="com.hbm.control.dis" class="link"  title="Click for data.">Single Player</a><br><br>
-<a href="com.hbm.control.dis" class="link"  title="Click for data.">Pair</a><br><br>
-<a href="com.hbm.control.dis" class="link"  title="Click for data.">Group</a>
+<a href="com.hbm.display.dis" class="link"  title="Click for data.">Single Player</a><br><br>
+<a href="com.hbm.display.dis" class="link"  title="Click for data.">Pair</a><br><br>
+<a href="com.hbm.display.dis" class="link"  title="Click for data.">Group</a>
 
    </div>
 

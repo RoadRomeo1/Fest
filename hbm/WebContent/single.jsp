@@ -275,7 +275,7 @@ font-style: italic;
 
 <button class="collapsible">Show Entries</button>
 <div class="content">
-<a href="com.hbm.control.dis" class="link">Show the data</a>
+<a href="com.hbm.display.dis" class="link">Show the data</a>
    </div>
 <br>
 <br>

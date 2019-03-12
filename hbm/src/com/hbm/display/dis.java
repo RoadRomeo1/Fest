@@ -1,4 +1,4 @@
-package com.hbm.control;
+package com.hbm.display;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -19,7 +19,7 @@ import com.hbm.connect.DataConnector;
 import com.hbm.data.HbmData;
 
 
-@WebServlet("/com.hbm.control.dis")
+@WebServlet("/com.hbm.display.dis")
 
 public class dis extends HttpServlet {
 	private static final long serialVersionUID = 1L;
