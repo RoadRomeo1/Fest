@@ -45,11 +45,19 @@
     <url-pattern>/Welcome</url-pattern>
   </servlet-mapping>
   <servlet>
-  <servlet-name>display</servlet-name>
-  <jsp-file>/display.jsp</jsp-file>
+    <servlet-name>display</servlet-name>
+    <jsp-file>/display.jsp</jsp-file>
   </servlet>
   <servlet-mapping>
-  <servlet-name>display</servlet-name>
-  <url-pattern>/display</url-pattern>
+    <servlet-name>display</servlet-name>
+    <url-pattern>/display</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  <servlet-name>DisplayPartner</servlet-name>
+  <jsp-file>/DisplayPartner.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>DisplayPartner</servlet-name>
+  <url-pattern>/display_partner</url-pattern>
   </servlet-mapping>
 </web-app>

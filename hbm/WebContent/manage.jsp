@@ -193,7 +193,7 @@ font-style: italic;
 <div class="content">
 <br>	
 <a href="com.hbm.display.dis" class="link"  title="Click for data.">Single Player</a><br><br>
-<a href="com.hbm.display.dis" class="link"  title="Click for data.">Pair</a><br><br>
+<a href="com.hbm.display.disPartner" class="link"  title="Click for data.">Pair</a><br><br>
 <a href="com.hbm.display.dis" class="link"  title="Click for data.">Group</a>
 
    </div>
