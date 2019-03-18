@@ -8,13 +8,13 @@ import com.hbm.data.HbmData;
 
 public class HbmDao {
 	
-	static Session session=DataConnector.getConnect();
-	static Transaction t=session.beginTransaction();
 	
 
 	
 	public static int register(HbmData data) {
 	int i=0;
+	 Session session=DataConnector.getConnect();
+	 Transaction t=session.beginTransaction();
 	
 	session.save(data);
 	i++;

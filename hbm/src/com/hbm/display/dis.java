@@ -47,6 +47,6 @@ public class dis extends HttpServlet {
      RequestDispatcher rd=request.getRequestDispatcher("display");
      rd.forward(request, response);
      
-	}
+	}	
 
 }

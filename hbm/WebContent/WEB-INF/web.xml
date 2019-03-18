@@ -68,4 +68,52 @@
     <servlet-name>DisplayTeam</servlet-name>
     <url-pattern>/display_team</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <servlet-name>update</servlet-name>
+    <jsp-file>/update.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>update</servlet-name>
+    <url-pattern>/Update_Data</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>OldData</servlet-name>
+    <jsp-file>/OldData.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>OldData</servlet-name>
+    <url-pattern>/Update_here</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>update_pair</servlet-name>
+    <jsp-file>/update_pair.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>update_pair</servlet-name>
+    <url-pattern>/update_pair</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>OldData_pair</servlet-name>
+    <jsp-file>/OldData_pair.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>OldData_pair</servlet-name>
+    <url-pattern>/Update_pair_here</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>update_team</servlet-name>
+    <jsp-file>/update_team.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>update_team</servlet-name>
+    <url-pattern>/update_team</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  <servlet-name>OldData_Team</servlet-name>
+  <jsp-file>/OldData_Team.jsp</jsp-file>
+  </servlet> 
+  <servlet-mapping>
+  <servlet-name>OldData_Team</servlet-name>
+  <url-pattern>/Update_team_here</url-pattern>
+  </servlet-mapping>
 </web-app>

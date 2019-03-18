@@ -280,10 +280,6 @@ body {
 <br>
 
 
-<button class="collapsible">Update Entry</button>
-<div class="content">
- </div>
-
 
 <script>
 function myFunction() {

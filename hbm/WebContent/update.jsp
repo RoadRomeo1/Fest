@@ -6,7 +6,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 
 <title>Data Dashboard</title>
-<link  rel="icon" href="img/couple.png" type="image/x-icon"/>
+<link  rel="icon" href="img/single.png" type="image/x-icon"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
@@ -173,6 +173,11 @@ font-style: italic;
  background-color:#4CAF50;
  }
  
+ .d{
+ box-sizing: border-box;
+ border-color: #4CAF50;
+ 
+ }
 </style>
 </head>
 <body style="background-color:black;">
@@ -191,37 +196,27 @@ font-style: italic;
 
 <div style="padding-left:16px; color:white; text-align:center;">
 <h1>Fest</h1>
-</div>
 <br>
 <br>
 
-<center>
-<table>
-<tr>
-<th>Partner-1</th>
-<th>Partner-2</th>
-<th>Event Name</th>
-<th>Date of Event</th>
-</tr>
-</table>
-</center>
 
+<div class="d">
 <%@taglib uri="http://java.sun.com/jsp/jstl/core"  prefix="c"%>
-<center>
-<table>
-<c:forEach items="${requestScope.record}" var="a">
-<tr>
-<td><c:out value="${a.partner1}"/></td>
-<td><c:out value="${a.partner2}"/></td>
-<td><c:out value="${a.eventname}"/></td>
-<td><c:out value="${a.date}"/></td>
-</tr>
+<form action="com.hbm.redirecter.RedirecterForOldData" method="get">
+<select name="sel" class="sel" title="Select name of the player for updation.">
+<c:forEach items="${requestScope.record }" var="a">
+<option value="<c:out value="${a.name}"/>"><c:out value="${a.name}"/></option>
 </c:forEach>
-</table>
-</center>
+</select>
+<br>
+<br>
+<br>
+<br>
 
-
-
+<center><input type="submit" value="Update" class="btn" title="Click here for update selected data."></center>
+</form>
+</div>
+</div>
 
 <script>
 function myFunction() {

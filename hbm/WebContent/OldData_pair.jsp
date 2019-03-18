@@ -4,9 +4,8 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-
 <title>Data Dashboard</title>
-<link  rel="icon" href="img/couple.png" type="image/x-icon"/>
+<link  rel="icon" href="img/single.png" type="image/x-icon"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
@@ -173,10 +172,15 @@ font-style: italic;
  background-color:#4CAF50;
  }
  
+ .d{
+ box-sizing: border-box;
+ border-color: #4CAF50;
+ 
+ }
 </style>
-</head>
-<body style="background-color:black;">
 
+</head>
+<body bgcolor="black">
 
 <div class="topnav" id="myTopnav">
   <a href="Welcome" >Home</a>
@@ -189,66 +193,114 @@ font-style: italic;
   </a>
 </div>
 
-<div style="padding-left:16px; color:white; text-align:center;">
+<div style="padding-left:16px; color:white; text-align:center; background-color: black;">
 <h1>Fest</h1>
-</div>
 <br>
 <br>
-
-<center>
-<table>
-<tr>
-<th>Partner-1</th>
-<th>Partner-2</th>
-<th>Event Name</th>
-<th>Date of Event</th>
-</tr>
-</table>
-</center>
-
+<div class="d">
 <%@taglib uri="http://java.sun.com/jsp/jstl/core"  prefix="c"%>
-<center>
+<form action="com.hbm.update.upPartner" method="get">
 <table>
-<c:forEach items="${requestScope.record}" var="a">
+<c:forEach items="${requestScope.lst}" var="a">
+<tr><td><input type="text" name="p1" class="txt" value="<c:out value="${a.partner1}"/>" title="Enter the name"required="required"></td>
+<td><input type="text" name="Op1" class="txt" value="<c:out value="${a.partner1}"/>" title="Enter the Name" readonly="readonly"></td>
+</tr>
 <tr>
-<td><c:out value="${a.partner1}"/></td>
-<td><c:out value="${a.partner2}"/></td>
-<td><c:out value="${a.eventname}"/></td>
-<td><c:out value="${a.date}"/></td>
+<td><input type="text" name="p2" class="txt" title="Enter the name" value="<c:out value="${a.partner2}"/>" required="required"></td>
+<td><input type="text" name="Op2" class="txt" value="<c:out value="${a.partner2}"/>" title="Enter the Name" readonly="readonly"></td>
 </tr>
 </c:forEach>
+
+<tr>
+<td>
+<select class="sel" required name="event" title="Select Event type">
+<option>Event Type</option>
+<option> Roadies </option>
+<option> Dance </option>
+<option> Singing </option>
+<option> Skeet </option>
+<option> Stand up comedy </option>
+<option> Fashion walk </option>
+<option> Dressup </option>
+<option> Mask </option>
+<option> Tattoo </option>
+<option> Rangoli </option>
+<option> Other </option>
+</select>
+</td>
+<td>
+<select class="sel" required name="date" title="Select Date">
+<option>Date</option>
+<option>01</option>
+<option>02</option>
+<option>03</option>
+<option>04</option>
+<option>05</option>
+<option>06</option>
+<option>07</option>
+<option>08</option>
+<option>09</option>
+<option>10</option>
+<option>11</option>
+<option>12</option>
+<option>13</option>
+<option>14</option>
+<option>15</option>
+<option>16</option>
+<option>17</option>
+<option>18</option>
+<option>19</option>
+<option>20</option>
+<option>21</option>
+<option>22</option>
+<option>23</option>
+<option>24</option>
+<option>25</option>
+<option>26</option>
+<option>27</option>
+<option>28</option>
+<option>29</option>
+<option>30</option>
+<option>31</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>
+<select class="sel" required name="month" title="Select Month">
+<option>Month</option>
+<option>January</option>
+<option>Febuary</option>
+<option>March</option>
+<option>April</option>
+<option>May</option>
+<option>June</option>
+<option>July</option>
+<option>August</option>
+<option>September</option>
+<option>October</option>
+<option>November</option>
+<option>December</option>
+</select>
+</td>
+
+<td>
+<select class="sel" required name="year" title="Select Year">
+<option>Year</option>
+<option>2019</option>
+</select>
+</td>
+</tr>
+
 </table>
-</center>
 
+<br>
+<br>
 
+<center><input type="submit" value="Update" class="btn" title="Click here for update selected data."></center>
+</form>
 
-
-<script>
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-
-var coll = document.getElementsByClassName("collapsible");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
-    }
-  });
-}
-
-</script>
-
+</div>
+</div>
 </body>
 </html>

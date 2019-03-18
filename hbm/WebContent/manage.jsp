@@ -6,7 +6,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 
 <title>Fest</title>
-<link  rel="icon" href="img/single.png" type="image/x-icon"/>
+<link  rel="icon" href="img\manage.png" type="image/x-icon"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
@@ -179,24 +179,34 @@ font-style: italic;
 <br>
 <br>
 <br>
-
-<button class="collapsible">Delete Entry</button>
-<div class="content">
-   </div>
-<br>
-<br>
-<br>
-<br>
-
-
 <button class="collapsible">Show Entries</button>
 <div class="content">
-<br>	
 <a href="com.hbm.display.dis" class="link"  title="Click for data.">Single Player</a><br><br>
 <a href="com.hbm.display.disPartner" class="link"  title="Click for data.">Pair</a><br><br>
 <a href="com.hbm.display.disTeam" class="link"  title="Click for data.">Group</a>
 
+</div>
+<br>
+<br>
+<br>
+<br>
+
+<button class="collapsible">Update Entry</button>
+<div class="content">
+<a href="com.hbm.display.up_Show" class="link"  title="Click for data.">Single Player</a><br><br>
+<a href="com.hbm.display.up_pair_Show" class="link"  title="Click for data.">Pair</a><br><br>
+<a href="com.hbm.display.up_team_Show" class="link"  title="Click for data.">Group</a>
+ </div>
+
+<br>
+<br>
+<br>
+<br>
+
+<button class="collapsible">Delete Entry</button>
+<div class="content">
    </div>
+
 
 
 <script>
