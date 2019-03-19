@@ -66,7 +66,7 @@ public class upPartner extends HttpServlet {
 		i++;
 		
 		
-		if(i>0&&i>0) {
+		if(i>0) {
     	    System.out.println("Status of data updation: "+status+" "+status1);
     	    System.out.println("Data Updated.");
 			pw.println("<script type=\"text/javascript\">");

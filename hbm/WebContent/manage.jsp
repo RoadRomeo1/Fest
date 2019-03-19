@@ -205,7 +205,10 @@ font-style: italic;
 
 <button class="collapsible">Delete Entry</button>
 <div class="content">
-   </div>
+<a href="com.hbm.display.del_Show" class="link"  title="Click for data.">Single Player</a><br><br>
+<a href="com.hbm.display.del_pair_Show" class="link"  title="Click for data.">Pair</a><br><br>
+<a href="com.hbm.display.del_team_Show" class="link"  title="Click for data.">Group</a>  
+</div>
 
 
 

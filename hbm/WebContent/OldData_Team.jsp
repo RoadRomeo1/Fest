@@ -202,57 +202,57 @@ font-style: italic;
 <form action="com.hbm.update.upTeam" method="get">
 <table>
 <c:forEach items="${requestScope.lst}" var="a">
-<tr><td><input type="text" name="partner1" class="txt" value="<c:out value="${a.partner1}"/>" title="Enter the name"required="required"></td>
+<tr><td><input type="text" name="partner1" class="txt" value="<c:out value="${a.partner1}"/>" title="Enter the name" required="required"></td>
 <td><input type="text" name="Opartner1" class="txt" value="<c:out value="${a.partner1}"/>" title="Enter the Name" readonly="readonly"></td>
 </tr>
 <tr>
-<td><input type="text" name="partner2" class="txt" title="Enter the name" value="<c:out value="${a.partner2}"/>" required="required"></td>
+<td><input type="text" name="partner2" class="txt" title="Enter the name" value="<c:out value="${a.partner2}"/>" ></td>
 <td><input type="text" name="Opartner2" class="txt" value="<c:out value="${a.partner2}"/>" title="Enter the Name" readonly="readonly"></td>
 </tr>
 <tr>
-<td><input type="text" name="partner3" class="txt" title="Enter the name" value="<c:out value="${a.partner3}"/>" required="required"></td>
+<td><input type="text" name="partner3" class="txt" title="Enter the name" value="<c:out value="${a.partner3}"/>" ></td>
 <td><input type="text" name="Opartner3" class="txt" value="<c:out value="${a.partner3}"/>" title="Enter the Name" readonly="readonly"></td>
 </tr><tr>
-<td><input type="text" name="partner4" class="txt" title="Enter the name" value="<c:out value="${a.partner4}"/>" required="required"></td>
+<td><input type="text" name="partner4" class="txt" title="Enter the name" value="<c:out value="${a.partner4}"/>" ></td>
 <td><input type="text" name="Opartner4" class="txt" value="<c:out value="${a.partner4}"/>" title="Enter the Name" readonly="readonly"></td>
 </tr>
 <tr>
-<td><input type="text" name="partner5" class="txt" title="Enter the name" value="<c:out value="${a.partner5}"/>" required="required"></td>
+<td><input type="text" name="partner5" class="txt" title="Enter the name" value="<c:out value="${a.partner5}"/>" ></td>
 <td><input type="text" name="Opartner5" class="txt" value="<c:out value="${a.partner5}"/>" title="Enter the Name" readonly="readonly"></td>
 </tr><tr>
-<td><input type="text" name="partner6" class="txt" title="Enter the name" value="<c:out value="${a.partner6}"/>" required="required"></td>
+<td><input type="text" name="partner6" class="txt" title="Enter the name" value="<c:out value="${a.partner6}"/>" ></td>
 <td><input type="text" name="Opartner6" class="txt" value="<c:out value="${a.partner6}"/>" title="Enter the Name" readonly="readonly"></td>
 </tr>
 <tr>
-<td><input type="text" name="partner7" class="txt" title="Enter the name" value="<c:out value="${a.partner7}"/>" required="required"></td>
+<td><input type="text" name="partner7" class="txt" title="Enter the name" value="<c:out value="${a.partner7}"/>" ></td>
 <td><input type="text" name="Opartner7" class="txt" value="<c:out value="${a.partner7}"/>" title="Enter the Name" readonly="readonly"></td>
 </tr><tr>
-<td><input type="text" name="partner8" class="txt" title="Enter the name" value="<c:out value="${a.partner8}"/>" required="required"></td>
+<td><input type="text" name="partner8" class="txt" title="Enter the name" value="<c:out value="${a.partner8}"/>" ></td>
 <td><input type="text" name="Opartner8" class="txt" value="<c:out value="${a.partner8}"/>" title="Enter the Name" readonly="readonly"></td>
 </tr>
 <tr>
-<td><input type="text" name="partner9" class="txt" title="Enter the name" value="<c:out value="${a.partner9}"/>" required="required"></td>
+<td><input type="text" name="partner9" class="txt" title="Enter the name" value="<c:out value="${a.partner9}"/>" ></td>
 <td><input type="text" name="Opartner9" class="txt" value="<c:out value="${a.partner9}"/>" title="Enter the Name" readonly="readonly"></td>
 </tr><tr>
-<td><input type="text" name="partner10" class="txt" title="Enter the name" value="<c:out value="${a.partner10}"/>" required="required"></td>
+<td><input type="text" name="partner10" class="txt" title="Enter the name" value="<c:out value="${a.partner10}"/>" ></td>
 <td><input type="text" name="Opartner10" class="txt" value="<c:out value="${a.partner10}"/>" title="Enter the Name" readonly="readonly"></td>
 </tr>
 <tr>
-<td><input type="text" name="partner11" class="txt" title="Enter the name" value="<c:out value="${a.partner11}"/>" required="required"></td>
+<td><input type="text" name="partner11" class="txt" title="Enter the name" value="<c:out value="${a.partner11}"/>" ></td>
 <td><input type="text" name="Opartner11" class="txt" value="<c:out value="${a.partner11}"/>" title="Enter the Name" readonly="readonly"></td>
 </tr><tr>
-<td><input type="text" name="partner12" class="txt" title="Enter the name" value="<c:out value="${a.partner12}"/>" required="required"></td>
+<td><input type="text" name="partner12" class="txt" title="Enter the name" value="<c:out value="${a.partner12}"/>" ></td>
 <td><input type="text" name="Opartner12" class="txt" value="<c:out value="${a.partner12}"/>" title="Enter the Name" readonly="readonly"></td>
 </tr>
 <tr>
-<td><input type="text" name="partner13" class="txt" title="Enter the name" value="<c:out value="${a.partner13}"/>" required="required"></td>
+<td><input type="text" name="partner13" class="txt" title="Enter the name" value="<c:out value="${a.partner13}"/>" ></td>
 <td><input type="text" name="Opartner13" class="txt" value="<c:out value="${a.partner13}"/>" title="Enter the Name" readonly="readonly"></td>
 </tr><tr>
-<td><input type="text" name="partner14" class="txt" title="Enter the name" value="<c:out value="${a.partner14}"/>" required="required"></td>
+<td><input type="text" name="partner14" class="txt" title="Enter the name" value="<c:out value="${a.partner14}"/>"></td>
 <td><input type="text" name="Opartner14" class="txt" value="<c:out value="${a.partner14}"/>" title="Enter the Name" readonly="readonly"></td>
 </tr>
 <tr>
-<td><input type="text" name="partner15" class="txt" title="Enter the name" value="<c:out value="${a.partner15}"/>" required="required"></td>
+<td><input type="text" name="partner15" class="txt" title="Enter the name" value="<c:out value="${a.partner15}"/>" ></td>
 <td><input type="text" name="Opartner15" class="txt" value="<c:out value="${a.partner15}"/>" title="Enter the Name" readonly="readonly"></td>
 </tr>
 </c:forEach>
@@ -261,15 +261,20 @@ font-style: italic;
 <td>
 <select class="sel" required name="event" title="Select Event type">
 <option>Event Type</option>
-<option> Roadies </option>
+<option>Cricket</option>
+<option>Vollyball</option>
+<option>Carrom</option>
+<option>Ludo</option>
+<option>PUBG</option>
+<option>Need for Speed</option>
+<option>Counter Strike</option>
+<option>Mini Militia</option>
 <option> Dance </option>
 <option> Singing </option>
 <option> Skeet </option>
-<option> Stand up comedy </option>
-<option> Fashion walk </option>
+<option> Nukkad Natak </option>
 <option> Dressup </option>
 <option> Mask </option>
-<option> Tattoo </option>
 <option> Rangoli </option>
 <option> Other </option>
 </select>
