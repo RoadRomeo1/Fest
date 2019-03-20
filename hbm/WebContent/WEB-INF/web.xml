@@ -27,7 +27,7 @@
   <servlet-mapping>
     <servlet-name>team</servlet-name>
     <url-pattern>/team</url-pattern>
-    </servlet-mapping>
+  </servlet-mapping>
   <servlet>
     <servlet-name>manage</servlet-name>
     <jsp-file>/manage.jsp</jsp-file>
@@ -117,11 +117,27 @@
     <url-pattern>/Update_team_here</url-pattern>
   </servlet-mapping>
   <servlet>
-  <servlet-name>delete</servlet-name>
-  <jsp-file>/delete.jsp</jsp-file>
+    <servlet-name>delete</servlet-name>
+    <jsp-file>/delete.jsp</jsp-file>
   </servlet>
   <servlet-mapping>
-  <servlet-name>delete</servlet-name>
-  <url-pattern>/delete_here</url-pattern>
+    <servlet-name>delete</servlet-name>
+    <url-pattern>/delete_here</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>delete_pair</servlet-name>
+    <jsp-file>/delete_pair.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>delete_pair</servlet-name>
+    <url-pattern>/delete_pair_here</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  <servlet-name>delete_team</servlet-name>
+  <jsp-file>/delete_team.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>delete_team</servlet-name>
+  <url-pattern>/delete_team_here</url-pattern>
   </servlet-mapping>
 </web-app>
