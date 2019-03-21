@@ -17,22 +17,34 @@ public class SaveEmail extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
             response.setContentType("text/html");
             PrintWriter pw=response.getWriter();
-            
             String email=request.getParameter("email");
-
+            String to=email;
+            String subject="Welcome to Fest.";
+            String msg="Thanks you are now subscribed to fest email alerts.";
              EmailData data=new EmailData();
 	         data.setEmail(email);
 	         int i=EmailDao.register(data);
 	         try {
-	         if(i>0) {
+	         if(i==1) {
 	        	 if(i==1) {
 	        	System.out.println("New Subscriber");
 	        	System.out.println(email);
+	        	int j=MailSender.sendMail(to, subject, msg);
+	        	if(j>0) {
    				pw.println("<script type=\"text/javascript\">");	
    				pw.println("alert('Congratulation!!! you are now Subscriber.');");
    				pw.println("location='Welcome';");
    				pw.println("</script>");
-	        	 }
+	        	}
+	        	else {
+	        	System.out.println("Some Error Happended.");
+	        	pw.println("<script type=\"text/javascript\">");	
+   				pw.println("alert('Congratulation!!! you are now Subscriber{but email is not sent to you}.');");
+   				pw.println("location='Welcome';");
+   				pw.println("</script>");
+	        	}
+	        	}
+	        	}
 	        	 else if(i==2) {
 	        		    pw.println("<script type=\"text/javascript\">");	
 	    				pw.println("alert('You are already a subscriber.');");
@@ -41,8 +53,8 @@ public class SaveEmail extends HttpServlet {
 	 	        		 
 	        	 }
 	         }
-	         }catch (Exception e) {
-                pw.println("Error: "+e.getMessage());
+	         catch (Exception e) {
+	           System.out.println("Error: "+e.getMessage());	 
             }
 	         
 	         
