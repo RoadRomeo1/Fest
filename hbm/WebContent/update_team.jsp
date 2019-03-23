@@ -194,14 +194,10 @@ font-style: italic;
   </a>
 </div>
 
-<div style="padding-left:16px; color:white; text-align:center;">
-<h1>Fest</h1>
-<br>
-<br>
-
-
-<div class="d">
 <%@taglib uri="http://java.sun.com/jsp/jstl/core"  prefix="c"%>
+<c:if test="${not empty requestScope.record}">
+<div style="padding-left:16px; color:white; text-align:center;">
+<div class="d">
 <form action="com.hbm.redirecter.RedirecterForOldData_Team" method="get">
 <select name="sel" class="sel" title="Select name of the player for updation.">
 <c:forEach items="${requestScope.record }" var="a">
@@ -212,11 +208,16 @@ font-style: italic;
 <br>
 <br>
 <br>
-
 <center><input type="submit" value="Update" class="btn" title="Click here for update selected data."></center>
 </form>
 </div>
 </div>
+</c:if>
+
+
+<c:if test="${empty reuestScope.record}">
+<center><div class="h2"><img alt="No Data Found" src="img/Empty.png" height="400px" width="800px"></div></center>
+</c:if>
 
 <script>
 function myFunction() {

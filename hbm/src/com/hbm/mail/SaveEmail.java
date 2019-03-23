@@ -19,7 +19,7 @@ public class SaveEmail extends HttpServlet {
             PrintWriter pw=response.getWriter();
             String email=request.getParameter("email");
             String to=email;
-            String subject="Welcome to Fest.";
+            String subject="Welcome to Fest";
             String msg="Thanks you are now subscribed to fest email alerts.";
              EmailData data=new EmailData();
 	         data.setEmail(email);

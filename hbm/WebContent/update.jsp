@@ -193,15 +193,12 @@ font-style: italic;
   <i class="fa fa-bars"></i>
   </a>
 </div>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core"  prefix="c"%>
+<c:if test="${not empty requestScope.record}">
 
 <div style="padding-left:16px; color:white; text-align:center;">
-<h1>Fest</h1>
-<br>
-<br>
-
 
 <div class="d">
-<%@taglib uri="http://java.sun.com/jsp/jstl/core"  prefix="c"%>
 <form action="com.hbm.redirecter.RedirecterForOldData" method="get">
 <select name="sel" class="sel" title="Select name of the player for updation.">
 <c:forEach items="${requestScope.record }" var="a">
@@ -217,6 +214,12 @@ font-style: italic;
 </form>
 </div>
 </div>
+
+</c:if>
+
+<c:if test="${empty requestScope.record}">
+<center><div class="h2"><img alt="No Data Found" src="img/Empty.png" height="400px" width="800px"></div></center>
+</c:if>
 
 <script>
 function myFunction() {

@@ -189,13 +189,10 @@ font-style: italic;
   </a>
 </div>
 
-<div style="padding-left:16px; color:white; text-align:center;">
-<h1>Fest</h1>
-</div>
-<br>
-<br>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core"  prefix="c"%>
 
-<center>
+<div style="padding-left:16px; color:white; text-align:center;">
+<c:if test="${not empty requestScope.record}"><center>
 <table>
 <tr>
 <th>Partner-1</th>
@@ -218,8 +215,6 @@ font-style: italic;
 </tr>
 </table>
 </center>
-
-<%@taglib uri="http://java.sun.com/jsp/jstl/core"  prefix="c"%>
 <center>
 <table>
 <c:forEach items="${requestScope.record}" var="a">
@@ -245,8 +240,12 @@ font-style: italic;
 </c:forEach>
 </table>
 </center>
+</c:if>
+</div>
 
-
+<c:if test="${empty requestScope.record}">
+<center><div class="h2"><img alt="No Data Found" src="img/Empty.png" height="400px" width="800px"></div></center>
+</c:if>
 
 
 <script>

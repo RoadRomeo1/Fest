@@ -48,7 +48,7 @@ public static int sendMail(String to,String subject,String message) {
 	    InternetAddress[] toAddress= {new InternetAddress(to)};
 	    msg.setRecipients(Message.RecipientType.TO,toAddress);
 		msg.setSubject(subject);
-		msg.setText(message);
+		msg.setText(message,"UTF-8","html");
 		Transport.send(msg);
 		i++;
 	    System.out.println("Email send Successfully");

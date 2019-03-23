@@ -17,6 +17,6 @@
 <mapping class="com.hbm.data.CoupleData"/> 
 <mapping class="com.hbm.data.TeamData"/> 
 <mapping class="com.hbm.data.EmailData"/> 
- 
+  
 </session-factory>
   </hibernate-configuration>

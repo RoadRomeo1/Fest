@@ -133,11 +133,11 @@
     <url-pattern>/delete_pair_here</url-pattern>
   </servlet-mapping>
   <servlet>
-  <servlet-name>delete_team</servlet-name>
-  <jsp-file>/delete_team.jsp</jsp-file>
+    <servlet-name>delete_team</servlet-name>
+    <jsp-file>/delete_team.jsp</jsp-file>
   </servlet>
   <servlet-mapping>
-  <servlet-name>delete_team</servlet-name>
-  <url-pattern>/delete_team_here</url-pattern>
+    <servlet-name>delete_team</servlet-name>
+    <url-pattern>/delete_team_here</url-pattern>
   </servlet-mapping>
 </web-app>

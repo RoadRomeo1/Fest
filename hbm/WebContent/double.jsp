@@ -156,9 +156,6 @@ body {
   </a>
 </div>
 
-<div style="padding-left:16px; color:white; text-align:center;">
-<h1>Fest</h1>
-</div>
 
 <br>
 <br>
