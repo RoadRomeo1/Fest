@@ -154,7 +154,7 @@ table {
   <a href="manage">Manage</a>
   <a href=#>News</a>
   <a href=#>Contact</a>
-  <a href=#>About</a>
+  <a href="about_us">About us</a>
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
   <i class="fa fa-bars"></i>
   </a>

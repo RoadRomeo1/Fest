@@ -140,4 +140,12 @@
     <servlet-name>delete_team</servlet-name>
     <url-pattern>/delete_team_here</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <servlet-name>about</servlet-name>
+    <jsp-file>/about.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>about</servlet-name>
+    <url-pattern>/about_us</url-pattern>
+  </servlet-mapping>
 </web-app>
