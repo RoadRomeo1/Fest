@@ -1,13 +1,10 @@
 # Fest
 
-(1)it is registration in any fest 
+(1) It is information management application, which can be used for any type of event or any other data manangement puprpose.
 
-(2)you can perform all basic crud operation in that application plus i also added email alert system in that application and also you can contact the developer via email in this application.  
+(2) You can perform CRUD oprations with this application, it also have email alert system in that application and also I have added feature to report a bug.  
 
-(3)it is written in java.
+(3) Devleoped in Java.
 
-(4) i let html,css,jsp,jstl,bootstrap,etc do the display part for me.
+(4) Frontend is developed in HTML/CSS/JS/Bootstrap.
 
-(5)databases:mysql
-
-(6)framework:Hibernate.
